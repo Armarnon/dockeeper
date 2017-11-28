@@ -2,14 +2,25 @@
   <!DOCTYPE html>
   <html>
     <head>
+        <title>main</title>
      <div th:replace="fragments/header :: header-css" />
 
     </head>
 
     <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="http://localhost:8080/login" class="brand-logo">Home</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="http://localhost:8080/main">main</a></li>
+                    <li><a href="http://localhost:8080/login">login</a></li>
+                   
+                </ul>
+            </div>
+        </nav>
       <!--Import jQuery before materialize.js-->
       <div th:replace="fragments/header :: header-js" />
       <h1 th:text="#{title}">this is spata</h1>
-      <h2>this is spata2</h2>
+      <h2>MAIN</h2>
     </body>
   </html>

@@ -44,12 +44,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .userDnPatterns("uid={0},ou=user")
                 //.groupSearchBase("ou=groups")
                 .contextSource()
-                .url("ldap://10.11.9.135:389/dc=wacoal,dc=co,dc=th")
-                .and()
-                .passwordCompare()
-                //.passwordEncoder(new LdapShaPasswordEncoder())
-                //.passwordEncoder(new Md5PasswordEncoder())
-                .passwordEncoder(new Md5PasswordEncoder())
-                .passwordAttribute("userPassword");
+                .url("ldap://10.11.9.135:389/dc=wacoal,dc=co,dc=th");
+//                .and()
+//                .passwordCompare()
+//                //.passwordEncoder(new LdapShaPasswordEncoder())
+//                //.passwordEncoder(new Md5PasswordEncoder())
+//                .passwordEncoder(new Md5PasswordEncoder())
+//                .passwordAttribute("userPassword");
     }
 }
